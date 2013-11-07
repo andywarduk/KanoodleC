@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
+#include <getopt.h>
 
 #include "Shapes.h"
 #include "Board.h"
@@ -19,6 +20,8 @@ int main(int argc, const char * argv[])
 {
     struct SolutionMgr SolutionOutput;
 
+// TODO  getopt();
+    
     InitShapes();
     
     CreateBoardShapes();
@@ -26,6 +29,8 @@ int main(int argc, const char * argv[])
     InitSolutionMgr(&SolutionOutput);
 
     FitShapes(&SolutionOutput);
+    
+    FiniSolutionMgr(&SolutionOutput);
     
     return 0;
 }

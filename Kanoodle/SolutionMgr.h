@@ -11,16 +11,21 @@
 
 #include <stdio.h>
 
-#define MAXSOLNS 1000
-
 struct SolutionMgr {
+    unsigned int TotCnt;
     unsigned int Cnt;
     unsigned int File;
-    long FPos;
+    unsigned int SolPerFile;
+
     FILE *Output;
+    long FPos;
+
+    FILE *Contents;
+    long CntFPos;
 };
 
 void InitSolutionMgr(struct SolutionMgr *SolutionOutput);
+void FiniSolutionMgr(struct SolutionMgr *SolutionOutput);
 void DumpSolution(struct SolutionMgr *SolutionOutput, int *Solution);
 
 #endif

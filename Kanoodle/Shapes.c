@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
+#include <inttypes.h>
 
 #include "Shapes.h"
 
@@ -370,7 +371,7 @@ unsigned int ShapeHeight(uint64_t Shape)
 
 uint64_t PackLayout(unsigned int Segments, unsigned int Layout[][2])
 {
-    int i;
+    unsigned int i;
     unsigned int x, y;
     uint64_t Result = 0;
     
@@ -420,7 +421,7 @@ void DumpShape(uint64_t Shape)
     unsigned int x, y;
     uint64_t Row;
     
-    printf("  %llu:\n", Shape);
+    printf("  %" PRIu64 ":\n", Shape);
     for(y = 0; y < MAXSEGS; y++){
         Row = GETSHAPEROW(Shape, y);
         printf("    ");

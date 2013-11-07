@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		792566091796FD2500915DBB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 792566081796FD2500915DBB /* main.c */; };
-		7925660B1796FD2500915DBB /* Kanoodle.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7925660A1796FD2500915DBB /* Kanoodle.1 */; };
+		7925661C1796FE2E00915DBB /* Board.c in Sources */ = {isa = PBXBuildFile; fileRef = 792566111796FE2E00915DBB /* Board.c */; };
+		7925661D1796FE2E00915DBB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 792566141796FE2E00915DBB /* main.c */; };
+		7925661F1796FE2E00915DBB /* ShapeFit.c in Sources */ = {isa = PBXBuildFile; fileRef = 792566161796FE2E00915DBB /* ShapeFit.c */; };
+		792566201796FE2E00915DBB /* Shapes.c in Sources */ = {isa = PBXBuildFile; fileRef = 792566181796FE2E00915DBB /* Shapes.c */; };
+		792566211796FE2E00915DBB /* SolutionMgr.c in Sources */ = {isa = PBXBuildFile; fileRef = 7925661A1796FE2E00915DBB /* SolutionMgr.c */; };
+		792566231797003200915DBB /* Kanoodle.css in CopyFiles */ = {isa = PBXBuildFile; fileRef = 792566131796FE2E00915DBB /* Kanoodle.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +22,34 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				7925660B1796FD2500915DBB /* Kanoodle.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		792566221797002600915DBB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				792566231797003200915DBB /* Kanoodle.css in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		792566051796FD2500915DBB /* Kanoodle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Kanoodle; sourceTree = BUILT_PRODUCTS_DIR; };
-		792566081796FD2500915DBB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		7925660A1796FD2500915DBB /* Kanoodle.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Kanoodle.1; sourceTree = "<group>"; };
+		792566111796FE2E00915DBB /* Board.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Board.c; sourceTree = "<group>"; };
+		792566121796FE2E00915DBB /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		792566131796FE2E00915DBB /* Kanoodle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = Kanoodle.css; sourceTree = "<group>"; };
+		792566141796FE2E00915DBB /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		792566151796FE2E00915DBB /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		792566161796FE2E00915DBB /* ShapeFit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ShapeFit.c; sourceTree = "<group>"; };
+		792566171796FE2E00915DBB /* ShapeFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeFit.h; sourceTree = "<group>"; };
+		792566181796FE2E00915DBB /* Shapes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Shapes.c; sourceTree = "<group>"; };
+		792566191796FE2E00915DBB /* Shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shapes.h; sourceTree = "<group>"; };
+		7925661A1796FE2E00915DBB /* SolutionMgr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SolutionMgr.c; sourceTree = "<group>"; };
+		7925661B1796FE2E00915DBB /* SolutionMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolutionMgr.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +82,17 @@
 		792566071796FD2500915DBB /* Kanoodle */ = {
 			isa = PBXGroup;
 			children = (
-				792566081796FD2500915DBB /* main.c */,
-				7925660A1796FD2500915DBB /* Kanoodle.1 */,
+				792566111796FE2E00915DBB /* Board.c */,
+				792566121796FE2E00915DBB /* Board.h */,
+				792566131796FE2E00915DBB /* Kanoodle.css */,
+				792566141796FE2E00915DBB /* main.c */,
+				792566151796FE2E00915DBB /* Makefile */,
+				792566161796FE2E00915DBB /* ShapeFit.c */,
+				792566171796FE2E00915DBB /* ShapeFit.h */,
+				792566181796FE2E00915DBB /* Shapes.c */,
+				792566191796FE2E00915DBB /* Shapes.h */,
+				7925661A1796FE2E00915DBB /* SolutionMgr.c */,
+				7925661B1796FE2E00915DBB /* SolutionMgr.h */,
 			);
 			path = Kanoodle;
 			sourceTree = "<group>";
@@ -76,6 +107,7 @@
 				792566011796FD2500915DBB /* Sources */,
 				792566021796FD2500915DBB /* Frameworks */,
 				792566031796FD2500915DBB /* CopyFiles */,
+				792566221797002600915DBB /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -117,7 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				792566091796FD2500915DBB /* main.c in Sources */,
+				7925661C1796FE2E00915DBB /* Board.c in Sources */,
+				7925661D1796FE2E00915DBB /* main.c in Sources */,
+				7925661F1796FE2E00915DBB /* ShapeFit.c in Sources */,
+				792566201796FE2E00915DBB /* Shapes.c in Sources */,
+				792566211796FE2E00915DBB /* SolutionMgr.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +185,11 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_PEDANTIC = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
@@ -176,7 +216,11 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_PEDANTIC = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
@@ -216,6 +260,7 @@
 				792566101796FD2500915DBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <inttypes.h>
 #include <assert.h>
 
 #include "Board.h"
@@ -201,7 +202,7 @@ void DumpBoard(uint64_t Board)
     unsigned int x, y;
     uint64_t Row;
     
-    printf("  %llu:\n", Board);
+    printf("  %" PRIu64 ":\n", Board);
     for(y = 0; y < BOARDY; y++){
         Row = GETBOARDROW(Board, y);
         printf("    ");
