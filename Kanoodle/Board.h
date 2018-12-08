@@ -31,7 +31,7 @@ extern unsigned int ShapesAtPositionOffset[BOARDX * BOARDY];
 extern unsigned int *ShapesAtPosition;
 
 
-extern void CreateBoardShapes();
+extern void CreateBoardShapes(void);
 extern void DumpBoard(uint64_t Board);
 
 

@@ -16,12 +16,10 @@
 #include "SolutionMgr.h"
 #include "ShapeFit.h"
 
-int main(int argc, const char * argv[])
+int main()
 {
     struct SolutionMgr SolutionOutput;
 
-// TODO  getopt();
-    
     InitShapes();
     
     CreateBoardShapes();

@@ -14,7 +14,7 @@
 #define SHAPECNT 12
 #define MAXSEGS 5
 
-void InitShapes();
+void InitShapes(void);
 
 struct ShapeLayout {
     uint64_t Layout;
